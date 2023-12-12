@@ -8,4 +8,4 @@ COPY my_script.R /home/Project_RAP/my_script.R
 
 RUN R -e 'setwd("/home/Project_RAP"); source("my_script.R")'
 
-RUN Rscript -e '/home/Project_RAP/my_script.R'
+RUN cd /home/Project_RAP && Rscript -e my_script.R
