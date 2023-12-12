@@ -20,6 +20,4 @@ jobs:
       
     - name: Docker Run Action
       run: >
-        docker run --rm --name test_container -v 
-        /github/workspace/shared_folder:/home/housing/shared_folder:rw 
-        test_image
+        docker run --rm --name test_container test_image
