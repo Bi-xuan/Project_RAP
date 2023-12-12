@@ -1,0 +1,25 @@
+name: Reproducible pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+      
+    - name: Build the Docker image
+      run: docker build .
+      
+    - name: Docker Run Action
+      run: >
+        docker run --rm --name test_container -v 
+        /github/workspace/shared_folder:/home/housing/shared_folder:rw 
+        test_image
