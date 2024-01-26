@@ -1,0 +1,11 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|8f191a983437991a|||||||||||||||
+df|stem|aee02d1dbeeeac83|f0c78c8250679058|3a879ac9dd18ef80|-1886497314||t19748.7809555681s|13cf9bb767930226|1214|rds|local|vector|||0.024||
+get_data|function|ca42f08c941252d3|||||||||||||||
+get_unemp_rates|function|5117afe2085357eb|||||||||||||||
+labor_market_lux|stem|658357c274cba563|f0c78c8250679058|d32c440d99e854a3|-1155161630||t19748.7991790196s|9728238479c0827b|27264|rds|local|vector|||0.023||
+plot_unemp_rates|function|08006e5aea288bb8|||||||||||||||
+save_plot|function|018760166715daa7|||||||||||||||
+unemp_rates_lux|stem|9c648fb66cc5c761|5adea58155832c00|d5e9558061a7ce69|-1450982544||t19748.7991794022s|b7da018864a1e12d|3793|rds|local|vector|||0.011||
+unemp_rates_plot|stem|8570191376ad4015|832c02b6f19f9481|4d8d142898307b54|1941670818||t19748.809763609s|0fd102c271b369d7|61939|rds|local|vector|||0.008||
+unemp_rates_saved_plot|stem|f2fd75a5868f1983|7cb4dbc2f6120e41|dd840247ace89a36|1253655726|~/Documents/WorkshopII/Project_RAP/fig/unemp_rates_lux.png|t19748.8090600864s|628a4da40b90cfc6|347743|file|local|vector|||0.672||
