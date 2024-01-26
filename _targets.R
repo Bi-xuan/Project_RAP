@@ -23,7 +23,7 @@ list(
   
   tar_target(
     unemp_rates_saved_plot,
-    save_plot("~/Documents/WorkshopII/Project_RAP/fig/unemp_rates_lux.png", unemp_rates_plot),
+    save_plot("/home/graphs/unemp_rates_lux.png", unemp_rates_plot),
     format = "file"
   )
 )
