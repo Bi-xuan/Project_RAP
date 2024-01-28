@@ -1,4 +1,4 @@
-# Employmenet in Luxembourg
+# Employment in Luxembourg
 ## 1. Introduction
 This pipeline uses data from the labor market of Luxembourg, and plots it into small multiples. In addition, it calculates the unemployment rates, fits a curve and plots them.
 
