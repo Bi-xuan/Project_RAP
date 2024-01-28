@@ -11,6 +11,28 @@ get_data <- function(){
   return(df)
 }
 
+plot_data <- function(df){
+  theme_set(theme_bw( base_size = 15))
+  
+  graph <- df |>
+    mutate(Date = as.Date(Date)) %>%
+    ggplot(aes(x = Date, y = Value, colour = Category)) + 
+    geom_line(aes( group = Category)) +
+    labs(title = "Labor Market of Luxembourg",
+         subtitle = "x axis: Date(Monthly)",
+         fill = NULL,
+         x = NULL,
+         y = NULL) +
+    facet_wrap(vars(Category), nrow = 4, scales = "free_y") +
+    scale_x_date(labels = scales::date_format("%Y")) + 
+    theme(strip.text = element_text(size = 10, face = "bold"),  
+          strip.background = element_blank(),  
+          legend.position = "none",  
+          axis.text = element_text(size = 10))
+  
+  return(graph)
+}
+
 get_unemp_rates <- function(df){
   # This function calculates the unemployment rates in Luxembourg using the following:
   # unemployment rates = Number of unemployed / Active population
